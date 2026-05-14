@@ -25,7 +25,7 @@ export function OnboardingStepProgress({
         <div className="pointer-events-none absolute -left-8 -bottom-10 h-14 w-14 rounded-full bg-cyan-300/14 blur-2xl" />
 
         <div className="relative">
-          <p className="min-w-0 text-[9px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-[10px]">
+          <p className="min-w-0 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-[10px]">
             {heading}
           </p>
 
