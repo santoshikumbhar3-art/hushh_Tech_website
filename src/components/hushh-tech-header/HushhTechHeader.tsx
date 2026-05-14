@@ -28,7 +28,7 @@ const TickerChip = ({ quote, isLoading }: { quote: StockQuote; isLoading?: boole
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
       ) : (
-        <span className="text-[9px] font-bold text-gray-600">
+        <span className="text-xs font-bold text-gray-600">
           {quote.displaySymbol.charAt(0)}
         </span>
       )}
