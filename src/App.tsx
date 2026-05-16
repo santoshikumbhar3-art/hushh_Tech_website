@@ -328,8 +328,7 @@ function App() {
               <AuthRequiredRoute>
                 <NDARequestModalComponent
                   session={session}
-                  onSubmit={(result: string) => {
-                    console.log("NDA submission result:", result);
+                  onSubmit={(result: string) => {              
                     // Handle post-submission actions here
                     if (result === "Approved" || result === "Pending" || result === "Requested permission") {
                       // Redirect to appropriate page on success
