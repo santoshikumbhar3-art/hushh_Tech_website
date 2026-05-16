@@ -9,17 +9,7 @@ export default function Footer() {
   const isLoggedIn = status === "authenticated";
 
   // Function to handle PDF download
-  const handleDownload = (pdfPath: string) => {
-    if (isLoggedIn) {
-      const link = document.createElement("a");
-      link.href = pdfPath;
-      link.download = pdfPath.split("/").pop() || "download";
-      link.click();
-    } else {
-      toast.error("Please log in first to access this content.");
-    }
-  };
-
+  
   return (
     <footer className="relative z-10 bg-[#0B0C10] border-t border-[#1F2937]">
       {/* Top Section: Identity & Contact */}
