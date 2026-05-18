@@ -181,6 +181,8 @@ const MobileBottomNav: React.FC = () => {
               onClick={() => navigate(item.path)}
               transition="all 0.2s ease"
               role="group"
+              tabIndex={0}
+              aria-label={item.label}
               aria-current={active ? 'page' : undefined}
               _active={{ transform: 'scale(0.95)' }}
               // Framer Motion item variants for staggered entrance
