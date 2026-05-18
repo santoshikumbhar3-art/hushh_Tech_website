@@ -44,7 +44,7 @@ const navItems: NavItem[] = [
     label: 'Profile',
     icon: FiUser,
     path: '/hushh-user-profile',
-    matchPaths: ['/contact', '/faq'],
+    
   },
 ];
 
