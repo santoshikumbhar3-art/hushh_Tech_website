@@ -279,7 +279,7 @@ export default function Navbar() {
                   </>
                 ) : (
                   <button
-                    onClick={() => navigate('/Login')}
+                    onClick={() => navigate('/login')}
                     className="inline-flex items-center justify-center rounded-full bg-[#2F80ED] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1f6cc7] transition-colors"
                   >
                     {t('nav.login')}
