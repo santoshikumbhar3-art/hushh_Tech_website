@@ -192,7 +192,7 @@ function PublicHushhProfilePage() {
               <p className="text-xl font-bold text-gray-900 mt-2 mb-1 truncate">
                 {formatList(preferences.food.favoriteCuisines)}
               </p>
-              <p className="text-xs text-gray-600 flex items-center gap-2">
+              <p className="text-xs text-gray-600 flex flex-wrap items-center gap-2">
                 <span className="px-2 py-0.5 bg-orange-100 rounded text-orange-700 font-medium">{preferences.food.dietType}</span>
                 <span className="px-2 py-0.5 bg-orange-100 rounded text-orange-700 font-medium">Spice: {preferences.food.spiceLevel}</span>
               </p>
