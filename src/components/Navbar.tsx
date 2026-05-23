@@ -351,6 +351,9 @@ export default function Navbar() {
         >
           <div
             ref={drawerRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="navigation menu"
             className="fixed inset-0 bg-[#F2F2F7] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
