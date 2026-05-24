@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Image, Text, VStack, Divider } from '@chakra-ui/react';
+import { Box, Heading, Image, Text, VStack, Divider, UnorderedList, ListItem } from '@chakra-ui/react';
 import MarketUpdate from '../../../components/images/0_Daily Market Update.jpg'
 
 export const frontmatter = {
@@ -37,9 +37,23 @@ const DailyMarketUpdate: React.FC = () => {
 
         <Box>
           <Heading as="h3" fontSize="lg" color="black">Sector Highlights</Heading>
-          <Text mt={2}>• Technology led gains, buoyed by Apple (AAPL) and NVIDIA (NVDA) posting significant intraday growth.</Text>
-          <Text>• Consumer Discretionary saw positive momentum from strong e-commerce growth in Amazon (AMZN).</Text>
-          <Text>• Financials remained stable, with JPMorgan Chase (JPM) continuing to perform well amidst solid economic indicators.</Text>
+          <UnorderedList spacing={2}>
+  <ListItem>
+    Technology led gains, buoyed by Apple (AAPL) and NVIDIA (NVDA)
+    posting significant intraday growth.
+  </ListItem>
+
+  <ListItem>
+    Consumer Discretionary saw positive momentum from strong e-commerce growth
+    in Amazon (AMZN).
+  </ListItem>
+
+  <ListItem>
+    Financials remained stable, with JPMorgan Chase (JPM) continuing to perform
+    well amidst solid economic indicators.
+  </ListItem>
+</UnorderedList>
+          
         </Box>
 
         <Box>
